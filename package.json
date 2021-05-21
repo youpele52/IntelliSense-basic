@@ -1,0 +1,32 @@
+{
+  "name": "react_parcel_starter",
+  "version": "1.0.0",
+  "description": "Starter repo for react bundled with parcel.",
+  "main": "build/index.html",
+  "author": {
+    "name": "youpele",
+    "url": "https://github.com/youpele52/"
+  },
+  "dependencies": {
+    "chart.js": "^3.2.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "dev": "parcel serve src/index.html",
+    "build": "parcel build src/index.html && rm -rf srv/build/* && mv -f build/* srv/build/",
+    "start": "nodemon srv/index.js"
+  },
+  "devDependencies": {
+    "@parcel/transformer-css": "^2.0.0-alpha.3",
+    "@parcel/transformer-postcss": "^2.0.0-alpha.3",
+    "parcel": "2.0.0-nightly.389",
+    "sass": "^1.32.11"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "license": "MIT"
+}
